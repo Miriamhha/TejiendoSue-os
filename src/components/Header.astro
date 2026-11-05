@@ -1,0 +1,26 @@
+
+---
+const menu = [
+  { nombre: "Inicio", enlace: "#inicio" },
+  { nombre: "Productos", enlace: "#productos" },
+  { nombre: "Nosotros", enlace: "#nosotros" },
+  { nombre: "Contacto", enlace: "#contacto" }
+];
+---
+
+{/* Encabezado y menú de navegación de Tejiendo Sueños */}
+
+<header class="header">
+  <a href="#inicio" class="logo">
+    <span>💜🦋🧵</span>
+    <span>Tejiendo Sueños</span>
+  </a>
+
+  <nav>
+    {menu.map((item) => (
+      <a href={item.enlace}>{item.nombre}</a>
+    ))}
+  </nav>
+</header>
+
+
