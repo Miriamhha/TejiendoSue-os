@@ -4,6 +4,7 @@ import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro"
 import Hero from "../components/Hero.astro"
 import Card from "../components/Card.astro"
+import Footer from "../components/Footer.astro"
 import productos from "../data/productos.json";
 const productosDisponibles = productos.filter(
   (producto) => producto.disponible === true
@@ -14,7 +15,7 @@ const productosDisponibles = productos.filter(
 	<Header />
 	<Hero />
 <section id="productos">
-  <h2>Nuestros productos</h2>
+  <h2>🌷 Nuestros productos 🧸</h2>
 
   <div class="contenedor-cards">
     {productosDisponibles.map((producto) => (
@@ -22,4 +23,5 @@ const productosDisponibles = productos.filter(
     ))}
   </div>
 </section>
+<Footer />
 </Layout>

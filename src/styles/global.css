@@ -224,3 +224,72 @@
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 25px;
   }
+  /*Estilo de footer*/
+
+  .footer {
+    background: #75528d;
+    color: white;
+    padding: 45px 8% 20px;
+  }
+
+  .footer-contenido {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-bottom: 30px;
+  }
+
+  .marca h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .marca p {
+    color: #f1eaf8;
+    font-style: italic;
+  }
+
+  .marca span {
+    font-size: 14px;
+    color: #e4d7ef;
+  }
+
+  .redes h3 {
+    margin-bottom: 15px;
+  }
+
+  .enlaces-redes {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+
+  .enlaces-redes a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  .enlaces-redes a:hover {
+    color: #d9c3ee;
+  }
+
+  .copyright {
+    border-top: 1px solid #ffffff40;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 13px;
+    color: #e4d7ef;
+  }
+
+  @media (max-width: 600px) {
+    .footer-contenido {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .enlaces-redes {
+      justify-content: center;
+    }
+  }
