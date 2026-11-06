@@ -3,9 +3,23 @@ import '../styles/global.css';
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro"
 import Hero from "../components/Hero.astro"
+import Card from "../components/Card.astro"
+import productos from "../data/productos.json";
+const productosDisponibles = productos.filter(
+  (producto) => producto.disponible === true
+);
 ---
 
 <Layout>
 	<Header />
 	<Hero />
+<section id="productos">
+  <h2>Nuestros productos</h2>
+
+  <div class="contenedor-cards">
+    {productosDisponibles.map((producto) => (
+      <Card producto={producto} />
+    ))}
+  </div>
+</section>
 </Layout>

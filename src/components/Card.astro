@@ -1,0 +1,33 @@
+---
+const { producto } = Astro.props;
+import productos from "../data/productos.json";
+---
+
+{/* Tarjeta reutilizable para todos los productos de crochet */}
+
+<article class="card">
+  <div class="imagen-producto">
+    <img
+      src={producto.imagen}
+      alt={producto.nombre}
+    />
+
+    {producto.nuevo && (
+      <span class="insignia">Nuevo ✨</span>
+    )}
+  </div>
+
+  <div class="contenido">
+    <span class="categoria">{producto.categoria}</span>
+
+    <h3>{producto.nombre}</h3>
+
+    <p>{producto.descripcion}</p>
+
+    <div class="pie-card">
+      <strong>S/ {producto.precio.toFixed(2)}</strong>
+      <span>Hecho a mano ♡</span>
+    </div>
+  </div>
+</article>
+
