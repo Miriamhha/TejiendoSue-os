@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "nombre": "Osito Amigurumi",
+    "categoria": "Amigurumis",
+    "descripcion": "Tierno osito tejido a mano con hilo de algodón.",
+    "precio": 45,
+    "imagen": "/imagenes/osito.jfif",
+    "disponible": true,
+    "nuevo": true
+  },
+  {
+    "id": 2,
+    "nombre": "Conejita Amigurumi",
+    "categoria": "Amigurumis",
+    "descripcion": "Linda conejita con vestido tejido a crochet.",
+    "precio": 50,
+    "imagen": "/imagenes/conejita.jfif",
+    "disponible": true,
+    "nuevo": false
+  },
+  {
+    "id": 3,
+    "nombre": "Ramo de Tulipanes",
+    "categoria": "Flores",
+    "descripcion": "Hermoso ramo de tulipanes tejidos a mano.",
+    "precio": 35,
+    "imagen": "/imagenes/RamoGrandeTulipan.jfif",
+    "disponible": true,
+    "nuevo": true
+  },
+  {
+    "id": 4,
+    "nombre": "Ramo a Crochet",
+    "categoria": "Flores",
+    "descripcion": "Rosas tejidas que nunca se marchitan.",
+    "precio": 12,
+    "imagen": "/imagenes/RamoTulipan.jfif",
+    "disponible": false,
+    "nuevo": false
+  },
+  {
+    "id": 5,
+    "nombre": "Bolso Lavanda",
+    "categoria": "Accesorios",
+    "descripcion": "Bolso artesanal tejido con hilo de algodón.",
+    "precio": 60,
+    "imagen": "/imagenes/Cartera.jfif",
+    "disponible": true,
+    "nuevo": false
+  },
+  {
+    "id": 6,
+    "nombre": "Llavero Corazón",
+    "categoria": "Accesorios",
+    "descripcion": "Pequeño corazón tejido ideal para regalar.",
+    "precio": 15,
+    "imagen": "/imagenes/Llavero.jfif",
+    "disponible": true,
+    "nuevo": true
+  }
+]
